@@ -1,0 +1,770 @@
+/* ==============================================
+   CONFIGURACIÓN GENERAL
+============================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f0f0f0;
+    background-color: #0a0e14;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 70px 0;
+    position: relative;
+}
+
+.bg-dark {
+    background-color: #06090d;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #c8102e; /* Rojo USMC */
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #f7b32b; /* Dorado USMC */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-light {
+    color: #ffffff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* ==============================================
+   ENCABEZADO / HERO
+============================================== */
+.hero {
+    height: 100vh;
+    background: url('') center/cover no-repeat;
+    background-color: #1a2430;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(10, 14, 20, 0.9), rgba(200, 16, 46, 0.7));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.emblem {
+    display: inline-block;
+    position: relative;
+}
+
+.star {
+    font-size: 4rem;
+    color: #f7b32b;
+    text-shadow: 0 0 15px rgba(247, 179, 43, 0.7);
+}
+
+.emblem h1 {
+    font-size: 5rem;
+    color: #ffffff;
+    letter-spacing: 8px;
+    margin-top: -20px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    font-style: italic;
+}
+
+.divider {
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #f7b32b, transparent);
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+.frase {
+    font-size: 1.5rem;
+    color: #f7b32b;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* ==============================================
+   BARRA DE NAVEGACIÓN
+============================================== */
+.navbar {
+    background-color: #0a0e14;
+    border-bottom: 2px solid #c8102e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li a {
+    display: block;
+    padding: 18px 25px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar li a:hover {
+    color: #f7b32b;
+    border-bottom: 3px solid #f7b32b;
+    background-color: rgba(200, 16, 46, 0.1);
+}
+
+/* ==============================================
+   SECCIÓN PRESENTACIÓN
+============================================== */
+.text-block p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #d0d0d0;
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #c8102e;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.4s ease;
+}
+
+.card-img:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.usmc-flag {
+    background: linear-gradient(45deg, #c8102e, #0a0e14, #0a0e14, #f7b32b);
+    position: relative;
+}
+
+.usmc-flag::before {
+    content: "USMC";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+}
+
+/* ==============================================
+   LÍNEA DE TIEMPO - HISTORIA
+============================================== */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #c8102e;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    padding-left: 30px;
+}
+
+.timeline-content {
+    background-color: #121820;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #f7b32b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.timeline-content h3 {
+    color: #f7b32b;
+    margin-bottom: 8px;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #f7b32b;
+    border-radius: 50%;
+    border: 4px solid #0a0e14;
+    box-shadow: 0 0 0 3px rgba(247, 179, 43, 0.3);
+}
+
+.timeline-item.left::after {
+    right: -12px;
+}
+
+.timeline-item.right::after {
+    left: -12px;
+}
+
+/* ==============================================
+   JERARQUÍA - ORDEN CORREGIDO + MIEMBROS
+============================================== */
+.rank-category {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #0e131a;
+    border-radius: 10px;
+    border-left: 4px solid #c8102e;
+}
+
+.category-title {
+    font-size: 1.6rem;
+    color: #f7b32b;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(247, 179, 43, 0.2);
+    padding-bottom: 8px;
+}
+
+.ranks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.rank-card {
+    background: linear-gradient(145deg, #121820, #1a2430);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 3px solid #c8102e;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.rank-card:hover {
+    transform: translateY(-8px);
+    border-top-color: #f7b32b;
+    box-shadow: 0 8px 20px rgba(200, 16, 46, 0.2);
+}
+
+.rank-insignia {
+    font-size: 1.8rem;
+    color: #f7b32b;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.rank-card h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.rank-card p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+}
+
+.click-info {
+    font-size: 0.8rem;
+    color: #f7b32b;
+    font-style: italic;
+    display: inline-block;
+}
+
+/* ESTILOS PARA LOS MENÚS DESPLEGABLES DE MIEMBROS */
+.members-container {
+    margin-top: 15px;
+    padding: 0 15px;
+    background-color: #0a0e14;
+    border-radius: 6px;
+    border-left: 3px solid #f7b32b;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.members-container.active {
+    max-height: 500px;
+    opacity: 1;
+    padding: 15px;
+}
+
+.members-container h4 {
+    color: #c8102e;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(200, 16, 46, 0.2);
+    padding-bottom: 5px;
+}
+
+.members-list li {
+    color: #d0d0d0;
+    font-size: 0.95rem;
+    padding: 6px 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.members-list li:hover {
+    background-color: #1a2430;
+    color: #f7b32b;
+    padding-left: 12px;
+}
+
+/* ==============================================
+   FICHA INDIVIDUAL DEL SOLDADO
+============================================== */
+.soldier-info {
+    background-color: #080b10;
+    border-top: 2px solid #c8102e;
+    border-bottom: 2px solid #c8102e;
+}
+
+.soldier-card {
+    background: linear-gradient(145deg, #0e131a, #121820);
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #f7b32b;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    color: #c8102e;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #f7b32b;
+}
+
+.soldier-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.detail-block {
+    padding: 20px;
+    background-color: #0a0e14;
+    border-radius: 8px;
+    border-left: 4px solid #c8102e;
+}
+
+.detail-block h3 {
+    color: #f7b32b;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.detail-block p, .detail-block li {
+    color: #e0e0e0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.detail-block ul li {
+    padding: 4px 0;
+}
+
+/* ==============================================
+   DIRECTORIO DE MIEMBROS (TABLA)
+============================================== */
+.directory-table-container {
+    overflow-x: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    border: 2px solid #c8102e;
+}
+
+.directory-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0e131a;
+}
+
+.directory-table thead {
+    background: linear-gradient(90deg, #c8102e, #960c22);
+}
+
+.directory-table th {
+    color: #ffffff;
+    padding: 15px 10px;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #f7b32b;
+}
+
+.directory-table td {
+    padding: 14px 10px;
+    color: #e0e0e0;
+    border-bottom: 1px solid #222c3a;
+    transition: background-color 0.3s ease;
+}
+
+.directory-table tbody tr:hover {
+    background-color: #121820;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.status.active {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.status.leave {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+.status.inactive {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+/* ==============================================
+   UNIDADES ESPECIALES
+============================================== */
+.units-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.unit-card {
+    background-color: #121820;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #222c3a;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.unit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #c8102e, #f7b32b);
+}
+
+.unit-card:hover {
+    border-color: #c8102e;
+    transform: scale(1.03);
+}
+
+.unit-icon {
+    font-size: 3rem;
+    color: #f7b32b;
+    margin-bottom: 15px;
+}
+
+.unit-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.unit-card p {
+    color: #b0b0b0;
+}
+
+/* ==============================================
+   REQUISITOS
+============================================== */
+.req-list {
+    max-width: 700px;
+    margin: 40px auto 0;
+}
+
+.req-item {
+    background-color: #121820;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #c8102e;
+    transition: border-left 0.3s ease;
+}
+
+.req-item:hover {
+    border-left-color: #f7b32b;
+}
+
+.check {
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.req-item p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* ==============================================
+   GALERÍA
+============================================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #222c3a;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    border-color: #f7b32b;
+    transform: scale(1.05);
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #1a2430;
+    position: relative;
+}
+
+.img1 { background: linear-gradient(45deg, #c8102e, #1a2430); }
+.img2 { background: linear-gradient(45deg, #0a0e14, #2c3e50); }
+.img3 { background: linear-gradient(45deg, #f7b32b, #1a2430); }
+.img4 { background: linear-gradient(45deg, #1a2430, #c8102e); }
+.img5 { background: linear-gradient(45deg, #2c3e50, #0a0e14); }
+.img6 { background: linear-gradient(45deg, #1a2430, #f7b32b); }
+
+/* ==============================================
+   PIE DE PÁGINA
+============================================== */
+.footer {
+    background-color: #06090d;
+    border-top: 3px solid #c8102e;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-logo h3 {
+    color: #f7b32b;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    color: #c0c0c0;
+    font-style: italic;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #d0d0d0;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f7b32b;
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #222c3a;
+    color: #888888;
+    font-size: 0.9rem;
+}
+
+/* ==============================================
+   RESPONSIVE / ADAPTACIÓN A MÓVILES
+============================================== */
+@media (max-width: 768px) {
+    .grid-2, .soldier-details {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px !important;
+        padding-right: 20px !important;
+        text-align: left !important;
+    }
+
+    .timeline-item::after {
+        left: 8px !important;
+        right: auto !important;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .emblem h1 {
+        font-size: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .soldier-card {
+        padding: 20px;
+    }
+}

@@ -3,264 +3,887 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USMC - Easter Basin Naval Base // SAMP</title>
+    <title>United States Marine Corps - SAMP</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Share+Tech+Mono&family=Orbitron:wght@500;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="crt-overlay"></div>
-    <div class="laser-line-scan"></div>
-    <div class="ambient-glow"></div>
-
-    <header class="tactical-header">
-        <div class="glitch-wrapper">
-            <div class="top-tag">// RED CENTRAL DE COMANDO E HISTORIAL DE PERSONAL //</div>
-            <h1 class="main-title" data-text="UNITED STATES MARINE CORPS">UNITED STATES MARINE CORPS</h1>
-            <p class="subtitle-server">SAN ANDREAS ROLEPLAY • ESTADO DE ALERTA: DEFCON 2</p>
-        </div>
-        <div class="header-stats">
-            <div class="stat-indicator"><span class="pulse-green"></span> RED: ENCRIPTADA</div>
-            <div class="stat-indicator"><span class="pulse-orange"></span> BASE: SECTOR SAN FIERRO</div>
+    <!-- Encabezado principal -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="logo-container">
+                <div class="emblem">
+                    <span class="star">★</span>
+                    <h1>USMC</h1>
+                </div>
+            </div>
+            <h2>United States Marine Corps</h2>
+            <p class="subtitulo">Fuerza de Élite • Servicio y Honor • SAMP</p>
+            <div class="divider"></div>
+            <p class="frase">«Semper Fidelis» — Siempre Fieles</p>
         </div>
     </header>
 
-    <input type="radio" name="battalion-select" id="bat-1mr" checked hidden>
-    <input type="radio" name="battalion-select" id="bat-1b1m" hidden>
-    <input type="radio" name="battalion-select" id="bat-2b1m" hidden>
-    <input type="radio" name="battalion-select" id="bat-1maw" hidden>
-    <input type="radio" name="battalion-select" id="bat-1clr" hidden>
-    <input type="radio" name="battalion-select" id="bat-cib" hidden>
-
-    <input type="radio" name="hud-ctrl" id="view-clear" checked hidden>
-    <input type="radio" name="hud-ctrl" id="view-co-1" hidden>
-    <input type="radio" name="hud-ctrl" id="view-wo-1" hidden>
-    <input type="radio" name="hud-ctrl" id="view-snco-1" hidden>
-    <input type="radio" name="hud-ctrl" id="view-nco-1" hidden>
-    <input type="radio" name="hud-ctrl" id="view-je-1" hidden>
-
-    <nav class="battalions-nav-bar">
-        <div class="nav-title">// SELECCIONAR UNIDAD COMPAÑÍA:</div>
-        <div class="nav-buttons-grid">
-            <label for="bat-1mr" class="bat-btn btn-1mr">1st Marine Regiment</label>
-            <label for="bat-1b1m" class="bat-btn btn-1b1m">1st Battalion, 1st Marines</label>
-            <label for="bat-2b1m" class="bat-btn btn-2b1m">2nd Battalion, 1st Marines</label>
-            <label for="bat-1maw" class="bat-btn btn-1maw">1st Marine Aircraft Wing</label>
-            <label for="bat-1clr" class="bat-btn btn-1clr">1st Combat Logistic Reg.</label>
-            <label for="bat-cib" class="bat-btn btn-cib">Criminal Investigation Bat.</label>
-        </div>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#jerarquia">Jerarquía</a></li>
+            <li><a href="#directorio">Directorio</a></li>
+            <li><a href="#unidades">Unidades</a></li>
+            <li><a href="#requisitos">Requisitos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+        </ul>
     </nav>
 
-    <section class="mainframe-container">
-        <div class="tactical-grid">
-            
-            <div class="roster-panel">
-                
-                <div class="battalion-view view-1mr">
-                    <div class="panel-title-bar">▲ ROSTER // 1st MARINE REGIMENT</div>
-                    
-                    <div class="rank-category">
-                        <div class="category-banner category-co">COMMISSIONED OFFICERS (CO)</div>
-                        <label for="view-co-1" class="operator-card border-co">
-                            <div class="op-rank">GEN</div>
-                            <div class="op-info"><span class="op-name">John_Miller</span><span class="op-subtext">Líder Faccionario</span></div>
-                            <div class="op-status active-status"></div>
-                        </label>
+    <!-- Sección: Presentación -->
+    <section id="inicio" class="section presentation">
+        <div class="container">
+            <h2 class="section-title">¿Quiénes somos?</h2>
+            <div class="grid-2">
+                <div class="text-block">
+                    <p>El <strong>United States Marine Corps (USMC)</strong> es una de las fuerzas armadas más prestigiosas y respetadas del mundo. En el servidor SAMP, representamos la rama de élite de las Fuerzas Armadas de los Estados Unidos, encargada de misiones de combate, seguridad, defensa y operaciones especiales en todo el estado de San Andreas.</p>
+                    <p>Nuestra misión es mantener el orden, proteger a la población, entrenar a nuestros miembros y actuar con honor, coraje y compromiso en cada operación. No somos solo un grupo, somos una hermandad que defiende los valores de la nación.</p>
+                </div>
+                <div class="image-block">
+                    <div class="card-img">
+                        <div class="img-placeholder usmc-flag"></div>
                     </div>
                 </div>
-
-                <div class="battalion-view view-1b1m">
-                    <div class="panel-title-bar">▲ ROSTER // 1st BATTALION, 1st MARINES</div>
-                    
-                    <div class="rank-category">
-                        <div class="category-banner category-snco">STAFF NON-COMMISSIONED OFFICERS (SNCO)</div>
-                        <label for="view-snco-1" class="operator-card border-snco">
-                            <div class="op-rank">MSGT</div>
-                            <div class="op-info"><span class="op-name">Marcus_Vance</span><span class="op-subtext">Instructor Principal</span></div>
-                            <div class="op-status active-status"></div>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="battalion-view view-2b1m">
-                    <div class="panel-title-bar">▲ ROSTER // 2nd BATTALION, 1st MARINES</div>
-                    
-                    <div class="rank-category">
-                        <div class="category-banner category-nco">NON-COMMISSIONED OFFICERS (NCO)</div>
-                        <label for="view-nco-1" class="operator-card border-nco">
-                            <div class="op-rank">SGT</div>
-                            <div class="op-info"><span class="op-name">Frank_Castle</span><span class="op-subtext">Comandante de Escuadra</span></div>
-                            <div class="op-status active-status"></div>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="battalion-view view-1maw">
-                    <div class="panel-title-bar">▲ ROSTER // 1st MARINE AIRCRAFT WING</div>
-                    
-                    <div class="rank-category">
-                        <div class="category-banner category-wo">WARRANT OFFICERS (WO)</div>
-                        <label for="view-wo-1" class="operator-card border-wo">
-                            <div class="op-rank">CWO5</div>
-                            <div class="op-info"><span class="op-name">Alex_Krieger</span><span class="op-subtext">Piloto de Caza Avanzado</span></div>
-                            <div class="op-status active-status"></div>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="battalion-view view-1clr">
-                    <div class="panel-title-bar">▲ ROSTER // 1st COMBAT LOGISTIC REGIMENT</div>
-                    
-                    <div class="rank-category">
-                        <div class="category-banner category-je">JUNIOR ENLISTED (JE)</div>
-                        <label for="view-je-1" class="operator-card border-je">
-                            <div class="op-rank">PFC</div>
-                            <div class="op-info"><span class="op-name">Derek_Frost</span><span class="op-subtext">Operador de Suministros</span></div>
-                            <div class="op-status standby-status"></div>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="battalion-view view-cib">
-                    <div class="panel-title-bar">▲ ROSTER // CRIMINAL INVESTIGATION BATTALION</div>
-                    <p style="padding: 15px; font-family: var(--font-mono); color: var(--text-dark);">[ ARCHIVOS CLASIFICADOS // PERSONAL DE INTELIGENCIA MILITAR NO DISPONIBLE EN RED PÚBLICA ]</p>
-                </div>
-
             </div>
-
-            <div class="hud-panel">
-                <div class="hud-corners">
-                    <span class="c-edge tl"></span><span class="c-edge tr"></span>
-                    <span class="c-edge bl"></span><span class="c-edge br"></span>
-                </div>
-
-                <div class="hud-screen screen-default">
-                    <div class="radar-scope">
-                        <div class="radar-line"></div>
-                        <div class="radar-blip" style="top: 30%; left: 60%;"></div>
-                    </div>
-                    <h3>SISTEMA DE ANÁLISIS BIOMÉTRICO</h3>
-                    <p class="flash-text">SELECCIONA UN OPERADOR PARA SINCRONIZAR TERMINAL</p>
-                </div>
-
-                <div class="hud-screen screen-co-1">
-                    <div class="profile-header co-glow">
-                        <h2>GEN. JOHN_MILLER</h2>
-                        <span class="profile-tag gold-tag">COMMISSIONED OFFICER</span>
-                    </div>
-                    <div class="biometric-bars">
-                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 100%;"></div></div><span>100%</span></div>
-                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 100%;"></div></div><span>100%</span></div>
-                    </div>
-                    <div class="intel-grid">
-                        <div class="intel-item"><strong>ID CUENTA:</strong> #10245</div>
-                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 1st Marine Regiment</div>
-                        <div class="intel-item"><strong>ARMAMENTO:</strong> M4A1 // Desert Eagle</div>
-                        <div class="intel-item"><strong>SANGRE:</strong> AB+</div>
-                    </div>
-                    <div class="intel-folder">
-                        <h5>EXPEDIENTE DE ASALTO Y ESTRATEGIA:</h5>
-                        <p>Máximo responsable estratégico del cuerpo de Marines en San Fierro. Diseña planes de asalto aéreos, terrestres y navales. Encargado directo del reclutamiento de oficiales y diplomacia gubernamental.</p>
-                    </div>
-                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
-                </div>
-
-                <div class="hud-screen screen-wo-1">
-                    <div class="profile-header wo-glow">
-                        <h2>CWO5. ALEX_KRIEGER</h2>
-                        <span class="profile-tag silver-tag">WARRANT OFFICER</span>
-                    </div>
-                    <div class="biometric-bars">
-                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 100%;"></div></div><span>100%</span></div>
-                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 100%;"></div></div><span>100%</span></div>
-                    </div>
-                    <div class="intel-grid">
-                        <div class="intel-item"><strong>ID CUENTA:</strong> #21054</div>
-                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 1st Marine Aircraft Wing</div>
-                        <div class="intel-item"><strong>ARMAMENTO:</strong> MP5 // Hydra Jets</div>
-                        <div class="intel-item"><strong>SANGRE:</strong> O-</div>
-                    </div>
-                    <div class="intel-folder">
-                        <h5>REGISTRO DE VUELO Y LOGÍSTICA:</h5>
-                        <p>Especialista técnico de rango experto. Líder logístico encargado de la administración y mantenimiento de blindados, helicópteros de combate Hunter y superioridad aérea en San Fierro.</p>
-                    </div>
-                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
-                </div>
-
-                <div class="hud-screen screen-snco-1">
-                    <div class="profile-header snco-glow">
-                        <h2>MSGT. MARCUS_VANCE</h2>
-                        <span class="profile-tag bronze-tag">STAFF NON-COMMISSIONED</span>
-                    </div>
-                    <div class="biometric-bars">
-                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 95%;"></div></div><span>95%</span></div>
-                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 100%;"></div></div><span>100%</span></div>
-                    </div>
-                    <div class="intel-grid">
-                        <div class="intel-item"><strong>ID CUENTA:</strong> #44912</div>
-                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 1st Battalion, 1st Marines</div>
-                        <div class="intel-item"><strong>ARMAMENTO:</strong> M4A1 // Rifle de Sniper</div>
-                        <div class="intel-item"><strong>SANGRE:</strong> A+</div>
-                    </div>
-                    <div class="intel-folder">
-                        <h5>REGISTRO DE INSTRUCCIÓN MILITAR:</h5>
-                        <p>Suboficial mayor con amplia experiencia en combate táctico. Encargado de liderar las academias militares (Bootcamps), adiestrar reclutas y coordinar el despliegue de infantería ligera.</p>
-                    </div>
-                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
-                </div>
-
-                <div class="hud-screen screen-nco-1">
-                    <div class="profile-header nco-glow">
-                        <h2>SGT. FRANK_CASTLE</h2>
-                        <span class="profile-tag green-tag">NON-COMMISSIONED OFFICER</span>
-                    </div>
-                    <div class="biometric-bars">
-                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 100%;"></div></div><span>100%</span></div>
-                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 50%;"></div></div><span>50%</span></div>
-                    </div>
-                    <div class="intel-grid">
-                        <div class="intel-item"><strong>ID CUENTA:</strong> #89221</div>
-                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 2nd Battalion, 1st Marines</div>
-                        <div class="intel-item"><strong>ARMAMENTO:</strong> M4A1 // Combat Shotgun</div>
-                        <div class="intel-item"><strong>SANGRE:</strong> B-</div>
-                    </div>
-                    <div class="intel-folder">
-                        <h5>TACTICAL INFANTRY RECORD:</h5>
-                        <p>Supervisa las escuadras de fusileros en campo. Coordina patrullas preventivas de asalto, misiones de protección VIP en convoyes estratégicos y despliegues en zonas rojas.</p>
-                    </div>
-                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
-                </div>
-
-                <div class="hud-screen screen-je-1">
-                    <div class="profile-header je-glow">
-                        <h2>PFC. DEREK_FROST</h2>
-                        <span class="profile-tag gray-tag">JUNIOR ENLISTED</span>
-                    </div>
-                    <div class="biometric-bars">
-                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 85%;"></div></div><span>85%</span></div>
-                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 0%;"></div></div><span>0%</span></div>
-                    </div>
-                    <div class="intel-grid">
-                        <div class="intel-item"><strong>ID CUENTA:</strong> #93312</div>
-                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 1st Combat Logistic Reg.</div>
-                        <div class="intel-item"><strong>ARMAMENTO:</strong> M4A1 // Silenced 9mm</div>
-                        <div class="intel-item"><strong>SANGRE:</strong> O+</div>
-                    </div>
-                    <div class="intel-folder">
-                        <h5>REGISTRO LOGÍSTICO RECIENTE:</h5>
-                        <p>Infante regular asignado a operaciones de distribución logística. Encargado de perímetros defensivos básicos en Easter Basin, transporte y repostaje de suministros a escuadras operativas.</p>
-                    </div>
-                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
-                </div>
-
-            </div>
-
         </div>
     </section>
 
-    <footer class="terminal-footer">
-        <p>SAMP INTEL INTERFACE // ENCRIPTACIÓN TÁCTICA CUÁNTICA MIL-STD-188 &copy; 2026</p>
+    <!-- Sección: Historia -->
+    <section id="historia" class="section history bg-dark">
+        <div class="container">
+            <h2 class="section-title text-light">Nuestra Historia</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Origen</h3>
+                        <p>Fundado en el servidor con la intención de crear una fuerza militar realista, organizada y disciplinada, fiel a la historia y tradición real del Cuerpo de Marines.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Expansión</h3>
+                        <p>Pasamos de ser un pequeño grupo a convertirnos en una de las facciones más grandes y respetadas, con estructuras, reglamentos y entrenamientos estrictos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Actualidad</h3>
+                        <p>Hoy operamos en todo el territorio de San Andreas, participando en misiones conjuntas con el ejército, policía y otras agencias, siendo referencia de disciplina y profesionalismo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Jerarquía -->
+    <section id="jerarquia" class="section hierarchy">
+        <div class="container">
+            <h2 class="section-title">Jerarquía Militar Oficial</h2>
+            <p class="text-center">Estructura exacta del Cuerpo de Marines de los Estados Unidos, ordenada de mayor a menor rango.</p>
+            
+            <!-- Commissioned Officers (PRIMEROS - MÁS ALTOS) -->
+            <div class="rank-category">
+                <h3 class="category-title">Commissioned Officers</h3>
+                <div class="ranks-grid">
+                    <div class="rank-card" onclick="toggleMembers('colonel')">
+                        <div class="rank-insignia">✦✦✦✦</div>
+                        <h3>Lieutenant Colonel</h3>
+                        <p>Segundo al mando general. Dirige la organización completa y actúa como mano derecha del Comandante.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <!-- MENÚ DESPLEGABLE DE MIEMBROS -->
+                        <div class="members-container" id="colonel">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier1')" class="soldier-item">• Ricardo Smith</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="rank-card" onclick="toggleMembers('major')">
+                        <div class="rank-insignia">✦✦✦</div>
+                        <h3>Major</h3>
+                        <p>Alto mando. Coordina batallones, diseña estrategias y supervisa el cumplimiento de objetivos.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="major">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier4')" class="soldier-item"> </li>
+                                <li onclick="showSoldierInfo('soldier5')" class="soldier-item"> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="rank-card" onclick="toggleMembers('captain')">
+                        <div class="rank-insignia">✦✦</div>
+                        <h3>Captain</h3>
+                        <p>Comandante de compañía. Toma decisiones tácticas, gestiona personal y representa a la facción.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="captain">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier6')" class="soldier-item">• Jhosep Orozco</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="rank-card" onclick="toggleMembers('firstlieu')">
+                        <div class="rank-insignia">✦ I</div>
+                        <h3>First Lieutenant</h3>
+                        <p>Oficial experimentado. Asiste al capitán, asume el mando en su ausencia y supervisa operaciones.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="firstlieu">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier9')" class="soldier-item">• Sebastian Soliz</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="rank-card" onclick="toggleMembers('secondlieu')">
+                        <div class="rank-insignia">✦ II</div>
+                        <h3>Second Lieutenant</h3>
+                        <p>Oficial subalterno. Comanda pelotones, planifica misiones y asume responsabilidades de mando.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="secondlieu">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier11')" class="soldier-item">• Gerard Lancaster</li>
+                                <li onclick="showSoldierInfo('soldier12')" class="soldier-item">• Joel Aguilar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Warrant Officers -->
+            <div class="rank-category">
+                <h3 class="category-title">Warrant Officers</h3>
+                <div class="ranks-grid">
+                    <div class="rank-card" onclick="toggleMembers('cwo2')">
+                        <div class="rank-insignia">⚜️ II</div>
+                        <h3>Chief Warrant Officer 2</h3>
+                        <p>Oficial técnico superior. Dirige programas especializados y asesora en decisiones estratégicas.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="cwo2">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier14')" class="soldier-item">• Timothy "Tech" Scott</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rank-card" onclick="toggleMembers('wo1')">
+                        <div class="rank-insignia">⚜️ I</div>
+                        <h3>Warrant Officer 1</h3>
+                        <p>Especialista técnico y táctico. Posee conocimientos avanzados en áreas específicas de operación.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="wo1">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier15')" class="soldier-item">• Kevin "Gear" King</li>
+                                <li onclick="showSoldierInfo('soldier16')" class="soldier-item">• Gary "Tool" Wright</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Staff Non-Commissioned Officers -->
+            <div class="rank-category">
+                <h3 class="category-title">Staff Non-Commissioned Officers</h3>
+                <div class="ranks-grid">
+                    <div class="rank-card" onclick="toggleMembers('msgt')">
+                        <div class="rank-insignia">★★★★★</div>
+                        <h3>Master Sergeant</h3>
+                        <p>Asesor principal. Responsable de la administración, doctrina y funcionamiento interno del cuerpo.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="msgt">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier17')" class="soldier-item">• Ronald "Doc" Adams</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rank-card" onclick="toggleMembers('gyst')">
+                        <div class="rank-insignia">★★★★●</div>
+                        <h3>Gunnery Sergeant</h3>
+                        <p>Máxima autoridad subalterna. Controla la disciplina general y actúa como enlace con el alto mando.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="gyst">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier18')" class="soldier-item">• Larry "Chief" Nelson</li>
+                                <li onclick="showSoldierInfo('soldier19')" class="soldier-item">• Frank "Hardy" Carter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rank-card" onclick="toggleMembers('ssgt')">
+                        <div class="rank-insignia">★★★●●</div>
+                        <h3>Staff Sergeant</h3>
+                        <p>Jefe de unidad. Asesora a oficiales, gestiona recursos y se encarga de la logística operativa.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="ssgt">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier20')" class="soldier-item">• Eric "Supply" Mitchell</li>
+                                <li onclick="showSoldierInfo('soldier21')" class="soldier-item">• Stephen "Logan" Roberts</li>
+                                <li onclick="showSoldierInfo('soldier22')" class="soldier-item">• Raymond "Base" Turner</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-Commissioned Officers -->
+            <div class="rank-category">
+                <h3 class="category-title">Non-Commissioned Officers</h3>
+                <div class="ranks-grid">
+                    <div class="rank-card" onclick="toggleMembers('sgt')">
+                        <div class="rank-insignia">★★●●●</div>
+                        <h3>Sergeant</h3>
+                        <p>Líder de sección. Coordina misiones, supervisa entrenamientos y hace cumplir el reglamento.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="sgt">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier23')" class="soldier-item">• Jack "Tactics" Phillips</li>
+                                <li onclick="showSoldierInfo('soldier24')" class="soldier-item">• Dennis "Drill" Campbell</li>
+                                <li onclick="showSoldierInfo('soldier25')" class="soldier-item">• Walter "Guard" Evans</li>
+                                <li onclick="showSoldierInfo('soldier26')" class="soldier-item">• Harold "Watch" Edwards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rank-card" onclick="toggleMembers('cpl')">
+                        <div class="rank-insignia">★●●●○</div>
+                        <h3>Corporal</h3>
+                        <p>Jefe de escuadra. Responsable directo de la formación y conducta de los reclutas.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="cpl">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier27')" class="soldier-item">• Carl "Trainer" Stewart</li>
+                                <li onclick="showSoldierInfo('soldier28')" class="soldier-item">• Arthur "Guide" Sanchez</li>
+                                <li onclick="showSoldierInfo('soldier29')" class="soldier-item">• Gerald "Team" Jenkins</li>
+                                <li onclick="showSoldierInfo('soldier30')" class="soldier-item">• Keith "Squad" Ford</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Junior Enlisted (ÚLTIMOS - MÁS BAJOS) -->
+            <div class="rank-category">
+                <h3 class="category-title">Junior Enlisted</h3>
+                <div class="ranks-grid">
+                    <div class="rank-card" onclick="toggleMembers('lcpl')">
+                        <div class="rank-insignia">●●●○○</div>
+                        <h3>Lance Corporal</h3>
+                        <p>Primer nivel de liderazgo básico. Guía a grupos pequeños y se destaca por su disciplina.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="lcpl">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier31')" class="soldier-item">• Roger "Helper" Powell</li>
+                                <li onclick="showSoldierInfo('soldier32')" class="soldier-item">• Johnny "Aux" Long</li>
+                                <li onclick="showSoldierInfo('soldier33')" class="soldier-item">• Albert "Assist" Patterson</li>
+                                <li onclick="showSoldierInfo('soldier34')" class="soldier-item">• Willie "Support" Hughes</li>
+                                <li onclick="showSoldierInfo('soldier35')" class="soldier-item">• Bruce "Aid" Flores</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rank-card" onclick="toggleMembers('pfc')">
+                        <div class="rank-insignia">●●○○○</div>
+                        <h3>Private First Class</h3>
+                        <p>Marino con formación completa. Participa en patrullas y operaciones bajo supervisión.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="pfc">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier36')" class="soldier-item">• Terry "Patrol" Washington</li>
+                                <li onclick="showSoldierInfo('soldier37')" class="soldier-item">• Sean "Routine" Butler</li>
+                                <li onclick="showSoldierInfo('soldier38')" class="soldier-item">• Christian "Duty" Simmons</li>
+                                <li onclick="showSoldierInfo('soldier39')" class="soldier-item">• Austin "Shift" Hawkins</li>
+                                <li onclick="showSoldierInfo('soldier40')" class="soldier-item">• Joe "Round" Burns</li>
+                                <li onclick="showSoldierInfo('soldier41')" class="soldier-item">• Albert "Post" Cole</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rank-card" onclick="toggleMembers('pvt')">
+                        <div class="rank-insignia">●○○○○</div>
+                        <h3>Private</h3>
+                        <p>Rango inicial. En entrenamiento básico, aprende reglas, valores y deberes generales.</p>
+                        <span class="click-info">👆 Clic para ver miembros</span>
+                        
+                        <div class="members-container" id="pvt">
+                            <h4>Miembros con este rango:</h4>
+                            <ul class="members-list">
+                                <li onclick="showSoldierInfo('soldier42')" class="soldier-item">• Bryan "Newcomer" Castro</li>
+                                <li onclick="showSoldierInfo('soldier43')" class="soldier-item">• Jordan "Recruit" Boyd</li>
+                                <li onclick="showSoldierInfo('soldier44')" class="soldier-item">• Eugene "Start" Mason</li>
+                                <li onclick="showSoldierInfo('soldier45')" class="soldier-item">• Wayne "Begin" Morales</li>
+                                <li onclick="showSoldierInfo('soldier46')" class="soldier-item">• Alan "Learn" Kennedy</li>
+                                <li onclick="showSoldierInfo('soldier47')" class="soldier-item">• Louis "Study" Warren</li>
+                                <li onclick="showSoldierInfo('soldier48')" class="soldier-item">• Roy "Class" Dixon</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NUEVA: DIRECTORIO DE MIEMBROS -->
+    <section id="directorio" class="section members-directory bg-dark">
+        <div class="container">
+            <h2 class="section-title text-light">Directorio de Miembros</h2>
+            <p class="text-center text-light">Información detallada de todo el personal activo en el Cuerpo de Marines</p>
+
+            <div class="directory-table-container">
+                <table class="directory-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre y Apodo</th>
+                            <th>Rango</th>
+                            <th>Fecha de Ingreso</th>
+                            <th>Batallón / Unidad</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John "Viper" Miller</td>
+                            <td>Lieutenant Colonel</td>
+                            <td>12/01/2024</td>
+                            <td>Comando General</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Robert "Eagle" Davis</td>
+                            <td>Lieutenant Colonel</td>
+                            <td>05/02/2024</td>
+                            <td>Estado Mayor</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>William "Storm" Thompson</td>
+                            <td>Major</td>
+                            <td>20/03/2024</td>
+                            <td>1er Batallón de Asalto</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>David "Ranger" Moore</td>
+                            <td>Major</td>
+                            <td>10/04/2024</td>
+                            <td>2do Batallón Anfibio</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>James "Wolf" Anderson</td>
+                            <td>Captain</td>
+                            <td>15/05/2024</td>
+                            <td>Compañía Bravo</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Andrew "Ghost" White</td>
+                            <td>First Lieutenant</td>
+                            <td>01/06/2024</td>
+                            <td>Unidad de Reconocimiento</td>
+                            <td><span class="status leave">Permiso</span></td>
+                        </tr>
+                        <tr>
+                            <td>Nicholas "Rookie" Martin</td>
+                            <td>Second Lieutenant</td>
+                            <td>18/06/2024</td>
+                            <td>Compañía Alfa</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Timothy "Tech" Scott</td>
+                            <td>Chief Warrant Officer 2</td>
+                            <td>02/07/2024</td>
+                            <td>Unidad Técnica / Logística</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Ronald "Doc" Adams</td>
+                            <td>Master Sergeant</td>
+                            <td>10/07/2024</td>
+                            <td>Administración y Doctrina</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Larry "Chief" Nelson</td>
+                            <td>Gunnery Sergeant</td>
+                            <td>25/07/2024</td>
+                            <td>Disciplina General</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jack "Tactics" Phillips</td>
+                            <td>Sergeant</td>
+                            <td>05/08/2024</td>
+                            <td>Sección de Operaciones</td>
+                            <td><span class="status inactive">Inactivo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Carl "Trainer" Stewart</td>
+                            <td>Corporal</td>
+                            <td>15/08/2024</td>
+                            <td>Escuadra de Entrenamiento</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Roger "Helper" Powell</td>
+                            <td>Lance Corporal</td>
+                            <td>01/09/2024</td>
+                            <td>Grupo de Apoyo</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Terry "Patrol" Washington</td>
+                            <td>Private First Class</td>
+                            <td>10/09/2024</td>
+                            <td>Patrulla Fronteriza</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Bryan "Newcomer" Castro</td>
+                            <td>Private</td>
+                            <td>20/09/2024</td>
+                            <td>Entrenamiento Básico</td>
+                            <td><span class="status active">Activo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: FICHA INDIVIDUAL DEL SOLDADO -->
+    <section id="soldier-info-section" class="section soldier-info" style="display: none;">
+        <div class="container">
+            <div class="soldier-card">
+                <span class="close-btn" onclick="closeSoldierInfo()">×</span>
+                <h2 id="soldier-name" class="section-title">Nombre del Soldado</h2>
+                <div class="soldier-details">
+                    <div class="detail-block">
+                        <h3>Batallón / Unidad</h3>
+                        <p id="soldier-battalion">-</p>
+                    </div>
+                    <div class="detail-block">
+                        <h3>Medallas y Condecoraciones</h3>
+                        <ul id="soldier-medals">
+                            <li>- Sin registro -</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Unidades Especiales -->
+    <section id="unidades" class="section units">
+        <div class="container">
+            <h2 class="section-title">Unidades Especiales</h2>
+            <div class="units-container">
+                <div class="unit-card">
+                    <div class="unit-icon">⚓</div>
+                    <h3>Unidad Anfibia</h3>
+                    <p>Especialistas en operaciones marítimas, desembarcos y control de zonas costeras y puertos.</p>
+                </div>
+                <div class="unit-card">
+                    <div class="unit-icon">✈</div>
+                    <h3>Ala Aérea</h3>
+                    <p>Control de aeronaves, apoyo aéreo, transporte de tropas y vigilancia desde el aire.</p>
+                </div>
+                <div class="unit-card">
+                    <div class="unit-icon">🎖️</div>
+                    <h3>Reconocimiento</h3>
+                    <p>Equipos de élite para misiones de inteligencia, infiltración y reconocimiento de terreno.</p>
+                </div>
+                <div class="unit-card">
+                    <div class="unit-icon">🛡️</div>
+                    <h3>Seguridad Interna</h3>
+                    <p>Protección de instalaciones militares, personal de alto rango y material sensible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Requisitos -->
+    <section id="requisitos" class="section requirements">
+        <div class="container">
+            <h2 class="section-title">Requisitos de Ingreso</h2>
+            <div class="req-list">
+                <div class="req-item">
+                    <span class="check">✓</span>
+                    <p>Ser mayor de edad dentro del servidor y cumplir con las normas generales.</p>
+                </div>
+                <div class="req-item">
+                    <span class="check">✓</span>
+                    <p>Disponibilidad para entrenamientos y actividades regulares de la facción.</p>
+                </div>
+                <div class="req-item">
+                    <span class="check">✓</span>
+                    <p>Buena conducta, respeto a superiores y compañeros, y espíritu de equipo.</p>
+                </div>
+                <div class="req-item">
+                    <span class="check">✓</span>
+                    <p>Aprobar el curso básico de entrenamiento militar y examen de reglamentos.</p>
+                </div>
+                <div class="req-item">
+                    <span class="check">✓</span>
+                    <p>Compromiso con los valores: Honor, Coraje y Fidelidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Galería -->
+    <section id="galeria" class="section gallery bg-dark">
+        <div class="container">
+            <h2 class="section-title text-light">Galería de Operaciones</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><div class="img-placeholder img1"></div></div>
+                <div class="gallery-item"><div class="img-placeholder img2"></div></div>
+                <div class="gallery-item"><div class="img-placeholder img3"></div></div>
+                <div class="gallery-item"><div class="img-placeholder img4"></div></div>
+                <div class="gallery-item"><div class="img-placeholder img5"></div></div>
+                <div class="gallery-item"><div class="img-placeholder img6"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>USMC - SAMP</h3>
+                    <p>«Semper Fidelis»</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#jerarquia">Jerarquía</a></li>
+                        <li><a href="#directorio">Directorio</a></li>
+                        <li><a href="#unidades">Unidades</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 United States Marine Corps - Servidor SAMP | Todos los derechos reservados</p>
+            </div>
+        </div>
     </footer>
 
-</body>
-</html>
+    <!-- Código JavaScript -->
+    <script>
+        // Función para desplegar/cerrar lista de miembros por rango
+        function toggleMembers(id) {
+            const container = document.getElementById(id);
+            container.classList.toggle('active');
+        }
+
+        // Base de datos con información de cada soldado
+        const soldiersData = {
+            soldier1: {
+                name: "John \"Viper\" Miller",
+                battalion: "Comando General",
+                medals: ["Medalla de Honor", "Estrella de Plata", "Corazón Púrpura"]
+            },
+            soldier2: {
+                name: "Robert \"Eagle\" Davis",
+                battalion: "Estado Mayor",
+                medals: ["Medalla al Mérito", "Legión de Mérito"]
+            },
+            soldier3: {
+                name: "Michael \"Hawk\" Wilson",
+                battalion: "Estado Mayor",
+                medals: ["Medalla de Servicio Distinguido"]
+            },
+            soldier4: {
+                name: "William \"Storm\" Thompson",
+                battalion: "1er Batallón de Asalto",
+                medals: ["Medalla de Valor", "Cruz de Combate"]
+            },
+            soldier5: {
+                name: "David \"Ranger\" Moore",
+                battalion: "2do Batallón Anfibio",
+                medals: ["Medalla de Operaciones Especiales"]
+            },
+            soldier6: {
+                name: "James \"Wolf\" Anderson",
+                battalion: "Compañía Bravo",
+                medals: ["Medalla de Liderazgo", "Estrella de Bronce"]
+            },
+            soldier7: {
+                name: "Christopher \"Blade\" Lewis",
+                battalion: "Compañía Bravo",
+                medals: ["Mención Honorífica"]
+            },
+            soldier8: {
+                name: "Joseph \"Shadow\" Clark",
+                battalion: "Compañía Alfa",
+                medals: ["Medalla de Inteligencia"]
+            },
+            soldier9: {
+                name: "Andrew \"Ghost\" White",
+                battalion: "Unidad de Reconocimiento",
+                medals: ["Medalla de Reconocimiento", "Cruz de Servicio"]
+            },
+            soldier10: {
+                name: "Ryan \"Scout\" Harris",
+                battalion: "Unidad de Reconocimiento",
+                medals: ["Mención de Servicio"]
+            },
+            soldier11: {
+                name: "Nicholas \"Rookie\" Martin",
+                battalion: "Compañía Alfa",
+                medals: ["Medalla de Entrenamiento"]
+            },
+            soldier12: {
+                name: "Benjamin \"Spark\" Allen",
+                battalion: "Compañía Charlie",
+                medals: ["Medalla de Disciplina"]
+            },
+            soldier13: {
+                name: "Samuel \"Jumper\" Young",
+                battalion: "Unidad Anfibia",
+                medals: ["Medalla de Desembarco"]
+            },
+            soldier14: {
+                name: "Timothy \"Tech\" Scott",
+                battalion: "Unidad Técnica / Logística",
+                medals: ["Medalla de Innovación", "Experto en Armamento"]
+            },
+            soldier15: {
+                name: "Kevin \"Gear\" King",
+                battalion: "Mantenimiento General",
+                medals: ["Medalla de Logística"]
+            },
+            soldier16: {
+                name: "Gary \"Tool\" Wright",
+                battalion: "Mantenimiento General",
+                medals: ["Mención de Eficiencia"]
+            },
+            soldier17: {
+                name: "Ronald \"Doc\" Adams",
+                battalion: "Administración y Doctrina",
+                medals: ["Medalla de Administración", "Orden del Mérito"]
+            },
+            soldier18: {
+                name: "Larry \"Chief\" Nelson",
+                battalion: "Disciplina General",
+                medals: ["Medalla de Honor y Disciplina"]
+            },
+            soldier19: {
+                name: "Frank \"Hardy\" Carter",
+                battalion: "Inspección General",
+                medals: ["Medalla de Rigor"]
+            },
+            soldier20: {
+                name: "Eric \"Supply\" Mitchell",
+                battalion: "Abastecimiento",
+                medals: ["Medalla de Suministros"]
+            },
+            soldier21: {
+                name: "Stephen \"Logan\" Roberts",
+                battalion: "Transporte",
+                medals: ["Medalla de Movilidad"]
+            },
+            soldier22: {
+                name: "Raymond \"Base\" Turner",
+                battalion: "Instalaciones",
+                medals: ["Medalla de Seguridad"]
+            },
+            soldier23: {
+                name: "Jack \"Tactics\" Phillips",
+                battalion: "Sección de Operaciones",
+                medals: ["Medalla de Táctica", "Estrella de Combate"]
+            },
+            soldier24: {
+                name: "Dennis \"Drill\" Campbell",
+                battalion: "Instrucción",
+                medals: ["Medalla de Instructor"]
+            },
+            soldier25: {
+                name: "Walter \"Guard\" Evans",
+                battalion: "Seguridad Exterior",
+                medals: ["Medalla de Vigilancia"]
+            },
+            soldier26: {
+                name: "Harold \"Watch\" Edwards",
+                battalion: "Seguridad Interior",
+                medals: ["Mención de Confianza"]
+            },
+            soldier27: {
+                name: "Carl \"Trainer\" Stewart",
+                battalion: "Escuadra de Entrenamiento",
+                medals: ["Medalla de Formación"]
+            },
+            soldier28: {
+                name: "Arthur \"Guide\" Sanchez",
+                battalion: "Escuadra de Apoyo",
+                medals: ["Medalla de Orientación"]
+            },
+            soldier29: {
+                name: "Gerald \"Team\" Jenkins",
+                battalion: "Escuadra de Combate",
+                medals: ["Medalla de Compañerismo"]
+            },
+            soldier30: {
+                name: "Keith \"Squad\" Ford",
+                battalion: "Escuadra de Reserva",
+                medals: ["Medalla de Preparación"]
+            },
+            soldier31: {
+                name: "Roger \"Helper\" Powell",
+                battalion: "Grupo de Apoyo",
+                medals: ["Medalla de Ayuda"]
+            },
+            soldier32: {
+                name: "Johnny \"Aux\" Long",
+                battalion: "Grupo de Servicios",
+                medals: ["Mención de Servicio"]
+            },
+            soldier33: {
+                name: "Albert \"Assist\" Patterson",
+                battalion: "Grupo Médico",
+                medals: ["Medalla de Salvamento"]
+            },
+            soldier34: {
+                name: "Willie \"Support\" Hughes",
+                battalion: "Grupo de Mantenimiento",
+                medals: ["Medalla de Dedicación"]
+            },
+            soldier35: {
+                name: "Bruce \"Aid\" Flores",
+                battalion: "Grupo de Comunicaciones",
+                medals: ["Medalla de Enlace"]
+            },
+            soldier36: {
+                name: "Terry \"Patrol\" Washington",
+                battalion: "Patrulla Fronteriza",
+                medals: ["Medalla de Seguridad Fronteriza"]
+            },
+            soldier37: {
+                name: "Sean \"Routine\" Butler",
+                battalion: "Patrulla Urbana",
+                medals: ["Medalla de Orden Público"]
+            },
+            soldier38: {
+                name: "Christian \"Duty\" Simmons",
+                battalion: "Patrulla Costera",
+                medals: ["Medalla de Defensa Costera"]
+            },
+            soldier39: {
+                name: "Austin \"Shift\" Hawkins",
+                battalion: "Turno de Vigilancia A",
+                medals: ["Medalla de Constancia"]
+            },
+            soldier40: {
+                name: "Joe \"Round\" Burns",
+                battalion: "Turno de Vigilancia B",
+                medals: ["Mención de Responsabilidad"]
+            },
+            soldier41: {
+                name: "Albert \"Post\" Cole",
+                battalion: "Puesto de Control",
+                medals: ["Medalla de Control"]
+            },
+            soldier42: {
+                name: "Bryan \"Newcomer\" Castro",
+                battalion: "Entrenamiento Básico",
+                medals: ["-"]
+            },
+            soldier43: {
+                name: "Jordan \"Recruit\" Boyd",
+                battalion: "Entrenamiento Básico",
+                medals: ["-"]
+            },
+            soldier44: {
+                name: "Eugene \"Start\" Mason",
+                battalion: "Entrenamiento Básico",
+                medals: ["-"]
+            },
+            soldier45: {
+                name: "Wayne \"Begin\" Morales",
+                battalion: "Entrenamiento Básico",
+                medals: ["-"]
+            },
+            soldier46: {
+                name: "Alan \"Learn\" Kennedy",
+                battalion: "Entrenamiento Básico",
+                medals: ["-"]
+            },
+            soldier47: {
+                name: "Louis \"Study\" Warren",
+                battalion: "Entrenamiento Básico",
+                medals: ["-"]
+            },
+            soldier48: {
+                name: "Roy \"Class\" Dixon",
+                battalion: "Entrenamiento Básico",
+                medals: ["-"]
+            }
+        };
+
+        // Mostrar información del soldado al hacer clic
+        function showSoldierInfo(id) {
+            const data = soldiersData[id];
+            if (!data) return;
+
+            // Rellenar datos
+            document.getElementById('soldier-name').textContent = data.name;
+            document.getElementById('soldier-battalion').textContent = data.battalion;
+            
+            // Limpiar y rellenar medallas
+            const medalsList = document.getElementById('soldier-medals');
+            medalsList.innerHTML = "";
+            if (data.medals.length === 0 || data.medals[0] === "-") {
+                medalsList.innerHTML = "<li>- Sin condecoraciones -</li>";
+            } else {
+                data.medals.forEach(medal => {
+                    const li = document.createElement('li');
+                    li.textContent = "🎖️ " + medal;
+                    medalsList.appendChild(li);
+                });
+            }
+
+            // Mostrar sección
+            document.getElementById('soldier-info-section').style.display = "block";
+            document.getElementById('soldier-info-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Cerrar ficha del soldado
+        function closeSoldierInfo() {
+            document.getElementById('soldier-info-section').style.display = "none";
+        }
+    </script>
+</body
