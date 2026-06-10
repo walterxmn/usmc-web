@@ -3,206 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USMC - GTA SAMP Faction</title>
+    <title>USMC - Easter Basin Naval Base // SAMP</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Share+Tech+Mono&family=Orbitron:wght@500;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="overlay-grid"></div>
+    <div class="crt-overlay"></div>
+    <div class="laser-line-scan"></div>
+    <div class="ambient-glow"></div>
 
-    <header class="navbar">
-        <div class="logo">USMC <span>FLORIDA</span></div>
-        <nav class="nav-links">
-            <a href="#inicio">Inicio</a>
-            <a href="#requisitos">Requisitos</a>
-            <a href="#miembros">Cadena de Mando</a>
-            <a href="#medallas">Medallas</a>
-        </nav>
+    <header class="tactical-header">
+        <div class="glitch-wrapper">
+            <div class="top-tag">// RED CENTRAL DE COMANDO E HISTORIAL DE PERSONAL //</div>
+            <h1 class="main-title" data-text="UNITED STATES MARINE CORPS">UNITED STATES MARINE CORPS</h1>
+            <p class="subtitle-server">SAN ANDREAS ROLEPLAY • ESTADO DE ALERTA: DEFCON 2</p>
+        </div>
+        <div class="header-stats">
+            <div class="stat-indicator"><span class="pulse-green"></span> RED: ENCRIPTADA</div>
+            <div class="stat-indicator"><span class="pulse-orange"></span> BASE: SECTOR SAN FIERRO</div>
+        </div>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1 class="glitch-text" data-text="UNITED STATES MARINE CORPS">UNITED STATES MARINE CORPS</h1>
-            <p class="subtitle">Servicio, Honor y Disciplina en las calles de Florida</p>
+    <input type="radio" name="battalion-select" id="bat-1mr" checked hidden>
+    <input type="radio" name="battalion-select" id="bat-1b1m" hidden>
+    <input type="radio" name="battalion-select" id="bat-2b1m" hidden>
+    <input type="radio" name="battalion-select" id="bat-1maw" hidden>
+    <input type="radio" name="battalion-select" id="bat-1clr" hidden>
+    <input type="radio" name="battalion-select" id="bat-cib" hidden>
+
+    <input type="radio" name="hud-ctrl" id="view-clear" checked hidden>
+    <input type="radio" name="hud-ctrl" id="view-co-1" hidden>
+    <input type="radio" name="hud-ctrl" id="view-wo-1" hidden>
+    <input type="radio" name="hud-ctrl" id="view-snco-1" hidden>
+    <input type="radio" name="hud-ctrl" id="view-nco-1" hidden>
+    <input type="radio" name="hud-ctrl" id="view-je-1" hidden>
+
+    <nav class="battalions-nav-bar">
+        <div class="nav-title">// SELECCIONAR UNIDAD COMPAÑÍA:</div>
+        <div class="nav-buttons-grid">
+            <label for="bat-1mr" class="bat-btn btn-1mr">1st Marine Regiment</label>
+            <label for="bat-1b1m" class="bat-btn btn-1b1m">1st Battalion, 1st Marines</label>
+            <label for="bat-2b1m" class="bat-btn btn-2b1m">2nd Battalion, 1st Marines</label>
+            <label for="bat-1maw" class="bat-btn btn-1maw">1st Marine Aircraft Wing</label>
+            <label for="bat-1clr" class="bat-btn btn-1clr">1st Combat Logistic Reg.</label>
+            <label for="bat-cib" class="bat-btn btn-cib">Criminal Investigation Bat.</label>
+        </div>
+    </nav>
+
+    <section class="mainframe-container">
+        <div class="tactical-grid">
             
-            <div class="logo-container">
-                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTmYVJ5OH1RG9YcayEG3z-DDbl1cYec7nGfPe0Ap8MjqafKZcodE7fq3JioD3wIPb3uKsEVOtsl2oX3vNQ" alt="USMC Logo" class="usmc-logo">
-            </div>
-
-            <a href="https://discord.gg/n3CR6csF" target="_blank" class="btn-discord">
-                <span class="btn-icon">⚡</span> UNIRSE AL DISCORD
-            </a>
-        </div>
-    </section>
-
-    <section id="requisitos" class="info-section">
-        <h2 class="section-title">REQUISITOS DE ALISTAMIENTO</h2>
-        <div class="cards-container">
-            <div class="card">
-                <div class="card-icon">🪖</div>
-                <h3>Conceptos de Rol</h3>
-                <p>Conocimiento sólido de canales (IC/OOC), entorno y comandos avanzados de rol (/me, /do).</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">🔫</div>
-                <h3>Disciplina Táctica</h3>
-                <p>Capacidad para acatar órdenes directas de los altos mandos bajo situaciones de alto estrés en tiroteos o patrullas.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">📋</div>
-                <h3>Historial Limpio</h3>
-                <p>No poseer reportes graves en el foro del servidor ni antecedentes penales excesivos dentro del juego.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="miembros" class="roster-section">
-        <h2 class="section-title">CADENA DE MANDO (ROSTER)</h2>
-        <p class="section-subtitle">Haz clic sobre cualquier soldado para abrir su expediente militar detallado</p>
-        
-        <div class="roster-container">
-
-            <input type="checkbox" id="soldado-1" class="modal-toggle">
-            
-            <label for="soldado-1" class="member-card lider">
-                <div class="rank-tag">General</div>
-                <div class="member-avatar">🦅</div>
-                <h3 class="member-name">John_Miller</h3>
-                <p class="member-status status-online">En Línea</p>
-                <span class="view-profile-hint">Ver Expediente 🗂️</span>
-            </label>
-
-            <div class="soldier-modal">
-                <div class="modal-content">
-                    <label for="soldado-1" class="close-modal">✕</label>
-                    <div class="modal-header">
-                        <span class="modal-badge gold">ALTO MANDO</span>
-                        <h2>EXPEDIENTE: JOHN_MILLER</h2>
-                        <p class="modal-rank">Rango Actual: General de División</p>
-                    </div>
-                    <div class="modal-body">
-                        <div class="info-grid">
-                            <div class="info-item"><strong>ID de Cuenta:</strong> #10245</div>
-                            <div class="info-item"><strong>Especialidad:</strong> Estrategia y Operaciones Aéreas</div>
-                            <div class="info-item"><strong>Ingreso:</strong> 14/MAR/2024</div>
-                            <div class="info-item"><strong>Sanciones:</strong> Ninguna (Limpio)</div>
-                        </div>
-                        <div class="modal-medals">
-                            <h4>Condecoraciones Asignadas:</h4>
-                            <div class="medal-badges">
-                                <span title="Medalla de Honor">🥇 Medalla de Honor</span>
-                                <span title="Servicio Meritorio">🦅 Servicio Meritorio</span>
-                            </div>
-                        </div>
+            <div class="roster-panel">
+                
+                <div class="battalion-view view-1mr">
+                    <div class="panel-title-bar">▲ ROSTER // 1st MARINE REGIMENT</div>
+                    
+                    <div class="rank-category">
+                        <div class="category-banner category-co">COMMISSIONED OFFICERS (CO)</div>
+                        <label for="view-co-1" class="operator-card border-co">
+                            <div class="op-rank">GEN</div>
+                            <div class="op-info"><span class="op-name">John_Miller</span><span class="op-subtext">Líder Faccionario</span></div>
+                            <div class="op-status active-status"></div>
+                        </label>
                     </div>
                 </div>
-            </div>
 
-
-            <input type="checkbox" id="soldado-2" class="modal-toggle">
-            <label for="soldado-2" class="member-card oficial">
-                <div class="rank-tag">Sargento</div>
-                <div class="member-avatar">🎖️</div>
-                <h3 class="member-name">Marcus_Vance</h3>
-                <p class="member-status status-online">En Línea</p>
-                <span class="view-profile-hint">Ver Expediente 🗂️</span>
-            </label>
-
-            <div class="soldier-modal">
-                <div class="modal-content">
-                    <label for="soldado-2" class="close-modal">✕</label>
-                    <div class="modal-header">
-                        <span class="modal-badge green">OFICIALIA</span>
-                        <h2>EXPEDIENTE: MARCUS_VANCE</h2>
-                        <p class="modal-rank">Rango Actual: Sargento Instructor</p>
-                    </div>
-                    <div class="modal-body">
-                        <div class="info-grid">
-                            <div class="info-item"><strong>ID de Cuenta:</strong> #44912</div>
-                            <div class="info-item"><strong>Especialidad:</strong> Entrenamiento e Infantería Ligera</div>
-                            <div class="info-item"><strong>Ingreso:</strong> 02/ENE/2025</div>
-                            <div class="info-item"><strong>Sanciones:</strong> 1 Advertencia verbal</div>
-                        </div>
-                        <div class="modal-medals">
-                            <h4>Condecoraciones Asignadas:</h4>
-                            <div class="medal-badges">
-                                <span title="Tirador Distinguido">🎯 Tirador Distinguido</span>
-                                <span title="Corazón Púrpura">🛡️ Corazón Púrpura</span>
-                            </div>
-                        </div>
+                <div class="battalion-view view-1b1m">
+                    <div class="panel-title-bar">▲ ROSTER // 1st BATTALION, 1st MARINES</div>
+                    
+                    <div class="rank-category">
+                        <div class="category-banner category-snco">STAFF NON-COMMISSIONED OFFICERS (SNCO)</div>
+                        <label for="view-snco-1" class="operator-card border-snco">
+                            <div class="op-rank">MSGT</div>
+                            <div class="op-info"><span class="op-name">Marcus_Vance</span><span class="op-subtext">Instructor Principal</span></div>
+                            <div class="op-status active-status"></div>
+                        </label>
                     </div>
                 </div>
-            </div>
 
-
-            <input type="checkbox" id="soldado-3" class="modal-toggle">
-            <label for="soldado-3" class="member-card recluta">
-                <div class="rank-tag">Cabo</div>
-                <div class="member-avatar">🪖</div>
-                <h3 class="member-name">Frank_Castle</h3>
-                <p class="member-status status-offline">Fuera de Servicio</p>
-                <span class="view-profile-hint">Ver Expediente 🗂️</span>
-            </label>
-
-            <div class="soldier-modal">
-                <div class="modal-content">
-                    <label for="soldado-3" class="close-modal">✕</label>
-                    <div class="modal-header">
-                        <span class="modal-badge grey">FUERZAS REGULARES</span>
-                        <h2>EXPEDIENTE: FRANK_CASTLE</h2>
-                        <p class="modal-rank">Rango Actual: Cabo de Infantería</p>
-                    </div>
-                    <div class="modal-body">
-                        <div class="info-grid">
-                            <div class="info-item"><strong>ID de Cuenta:</strong> #89221</div>
-                            <div class="info-item"><strong>Especialidad:</strong> Reconocimiento de Campo</div>
-                            <div class="info-item"><strong>Ingreso:</strong> 18/FEB/2026</div>
-                            <div class="info-item"><strong>Sanciones:</strong> Ninguna</div>
-                        </div>
-                        <div class="modal-medals">
-                            <h4>Condecoraciones Asignadas:</h4>
-                            <div class="medal-badges">
-                                <span title="Corazón Púrpura">🛡️ Corazón Púrpura</span>
-                            </div>
-                        </div>
+                <div class="battalion-view view-2b1m">
+                    <div class="panel-title-bar">▲ ROSTER // 2nd BATTALION, 1st MARINES</div>
+                    
+                    <div class="rank-category">
+                        <div class="category-banner category-nco">NON-COMMISSIONED OFFICERS (NCO)</div>
+                        <label for="view-nco-1" class="operator-card border-nco">
+                            <div class="op-rank">SGT</div>
+                            <div class="op-info"><span class="op-name">Frank_Castle</span><span class="op-subtext">Comandante de Escuadra</span></div>
+                            <div class="op-status active-status"></div>
+                        </label>
                     </div>
                 </div>
+
+                <div class="battalion-view view-1maw">
+                    <div class="panel-title-bar">▲ ROSTER // 1st MARINE AIRCRAFT WING</div>
+                    
+                    <div class="rank-category">
+                        <div class="category-banner category-wo">WARRANT OFFICERS (WO)</div>
+                        <label for="view-wo-1" class="operator-card border-wo">
+                            <div class="op-rank">CWO5</div>
+                            <div class="op-info"><span class="op-name">Alex_Krieger</span><span class="op-subtext">Piloto de Caza Avanzado</span></div>
+                            <div class="op-status active-status"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="battalion-view view-1clr">
+                    <div class="panel-title-bar">▲ ROSTER // 1st COMBAT LOGISTIC REGIMENT</div>
+                    
+                    <div class="rank-category">
+                        <div class="category-banner category-je">JUNIOR ENLISTED (JE)</div>
+                        <label for="view-je-1" class="operator-card border-je">
+                            <div class="op-rank">PFC</div>
+                            <div class="op-info"><span class="op-name">Derek_Frost</span><span class="op-subtext">Operador de Suministros</span></div>
+                            <div class="op-status standby-status"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="battalion-view view-cib">
+                    <div class="panel-title-bar">▲ ROSTER // CRIMINAL INVESTIGATION BATTALION</div>
+                    <p style="padding: 15px; font-family: var(--font-mono); color: var(--text-dark);">[ ARCHIVOS CLASIFICADOS // PERSONAL DE INTELIGENCIA MILITAR NO DISPONIBLE EN RED PÚBLICA ]</p>
+                </div>
+
+            </div>
+
+            <div class="hud-panel">
+                <div class="hud-corners">
+                    <span class="c-edge tl"></span><span class="c-edge tr"></span>
+                    <span class="c-edge bl"></span><span class="c-edge br"></span>
+                </div>
+
+                <div class="hud-screen screen-default">
+                    <div class="radar-scope">
+                        <div class="radar-line"></div>
+                        <div class="radar-blip" style="top: 30%; left: 60%;"></div>
+                    </div>
+                    <h3>SISTEMA DE ANÁLISIS BIOMÉTRICO</h3>
+                    <p class="flash-text">SELECCIONA UN OPERADOR PARA SINCRONIZAR TERMINAL</p>
+                </div>
+
+                <div class="hud-screen screen-co-1">
+                    <div class="profile-header co-glow">
+                        <h2>GEN. JOHN_MILLER</h2>
+                        <span class="profile-tag gold-tag">COMMISSIONED OFFICER</span>
+                    </div>
+                    <div class="biometric-bars">
+                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 100%;"></div></div><span>100%</span></div>
+                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 100%;"></div></div><span>100%</span></div>
+                    </div>
+                    <div class="intel-grid">
+                        <div class="intel-item"><strong>ID CUENTA:</strong> #10245</div>
+                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 1st Marine Regiment</div>
+                        <div class="intel-item"><strong>ARMAMENTO:</strong> M4A1 // Desert Eagle</div>
+                        <div class="intel-item"><strong>SANGRE:</strong> AB+</div>
+                    </div>
+                    <div class="intel-folder">
+                        <h5>EXPEDIENTE DE ASALTO Y ESTRATEGIA:</h5>
+                        <p>Máximo responsable estratégico del cuerpo de Marines en San Fierro. Diseña planes de asalto aéreos, terrestres y navales. Encargado directo del reclutamiento de oficiales y diplomacia gubernamental.</p>
+                    </div>
+                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
+                </div>
+
+                <div class="hud-screen screen-wo-1">
+                    <div class="profile-header wo-glow">
+                        <h2>CWO5. ALEX_KRIEGER</h2>
+                        <span class="profile-tag silver-tag">WARRANT OFFICER</span>
+                    </div>
+                    <div class="biometric-bars">
+                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 100%;"></div></div><span>100%</span></div>
+                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 100%;"></div></div><span>100%</span></div>
+                    </div>
+                    <div class="intel-grid">
+                        <div class="intel-item"><strong>ID CUENTA:</strong> #21054</div>
+                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 1st Marine Aircraft Wing</div>
+                        <div class="intel-item"><strong>ARMAMENTO:</strong> MP5 // Hydra Jets</div>
+                        <div class="intel-item"><strong>SANGRE:</strong> O-</div>
+                    </div>
+                    <div class="intel-folder">
+                        <h5>REGISTRO DE VUELO Y LOGÍSTICA:</h5>
+                        <p>Especialista técnico de rango experto. Líder logístico encargado de la administración y mantenimiento de blindados, helicópteros de combate Hunter y superioridad aérea en San Fierro.</p>
+                    </div>
+                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
+                </div>
+
+                <div class="hud-screen screen-snco-1">
+                    <div class="profile-header snco-glow">
+                        <h2>MSGT. MARCUS_VANCE</h2>
+                        <span class="profile-tag bronze-tag">STAFF NON-COMMISSIONED</span>
+                    </div>
+                    <div class="biometric-bars">
+                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 95%;"></div></div><span>95%</span></div>
+                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 100%;"></div></div><span>100%</span></div>
+                    </div>
+                    <div class="intel-grid">
+                        <div class="intel-item"><strong>ID CUENTA:</strong> #44912</div>
+                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 1st Battalion, 1st Marines</div>
+                        <div class="intel-item"><strong>ARMAMENTO:</strong> M4A1 // Rifle de Sniper</div>
+                        <div class="intel-item"><strong>SANGRE:</strong> A+</div>
+                    </div>
+                    <div class="intel-folder">
+                        <h5>REGISTRO DE INSTRUCCIÓN MILITAR:</h5>
+                        <p>Suboficial mayor con amplia experiencia en combate táctico. Encargado de liderar las academias militares (Bootcamps), adiestrar reclutas y coordinar el despliegue de infantería ligera.</p>
+                    </div>
+                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
+                </div>
+
+                <div class="hud-screen screen-nco-1">
+                    <div class="profile-header nco-glow">
+                        <h2>SGT. FRANK_CASTLE</h2>
+                        <span class="profile-tag green-tag">NON-COMMISSIONED OFFICER</span>
+                    </div>
+                    <div class="biometric-bars">
+                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 100%;"></div></div><span>100%</span></div>
+                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 50%;"></div></div><span>50%</span></div>
+                    </div>
+                    <div class="intel-grid">
+                        <div class="intel-item"><strong>ID CUENTA:</strong> #89221</div>
+                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 2nd Battalion, 1st Marines</div>
+                        <div class="intel-item"><strong>ARMAMENTO:</strong> M4A1 // Combat Shotgun</div>
+                        <div class="intel-item"><strong>SANGRE:</strong> B-</div>
+                    </div>
+                    <div class="intel-folder">
+                        <h5>TACTICAL INFANTRY RECORD:</h5>
+                        <p>Supervisa las escuadras de fusileros en campo. Coordina patrullas preventivas de asalto, misiones de protección VIP en convoyes estratégicos y despliegues en zonas rojas.</p>
+                    </div>
+                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
+                </div>
+
+                <div class="hud-screen screen-je-1">
+                    <div class="profile-header je-glow">
+                        <h2>PFC. DEREK_FROST</h2>
+                        <span class="profile-tag gray-tag">JUNIOR ENLISTED</span>
+                    </div>
+                    <div class="biometric-bars">
+                        <div class="bio-bar"><span class="label">SALUD:</span><div class="bar-bg"><div class="fill green-fill" style="width: 85%;"></div></div><span>85%</span></div>
+                        <div class="bio-bar"><span class="label">CHALECO:</span><div class="bar-bg"><div class="fill blue-fill" style="width: 0%;"></div></div><span>0%</span></div>
+                    </div>
+                    <div class="intel-grid">
+                        <div class="intel-item"><strong>ID CUENTA:</strong> #93312</div>
+                        <div class="intel-item"><strong>ASIGNACIÓN:</strong> 1st Combat Logistic Reg.</div>
+                        <div class="intel-item"><strong>ARMAMENTO:</strong> M4A1 // Silenced 9mm</div>
+                        <div class="intel-item"><strong>SANGRE:</strong> O+</div>
+                    </div>
+                    <div class="intel-folder">
+                        <h5>REGISTRO LOGÍSTICO RECIENTE:</h5>
+                        <p>Infante regular asignado a operaciones de distribución logística. Encargado de perímetros defensivos básicos en Easter Basin, transporte y repostaje de suministros a escuadras operativas.</p>
+                    </div>
+                    <label for="view-clear" class="btn-terminal-close">CERRAR REGISTRO</label>
+                </div>
+
             </div>
 
         </div>
     </section>
 
-    <section id="medallas" class="medals-section">
-        <h2 class="section-title">MEDALLAS Y CONDECORACIONES</h2>
-        <p class="section-subtitle">Galardones otorgados por mérito militar, valentía y antigüedad en servicio</p>
-        
-        <div class="medals-container">
-            <div class="medal-card">
-                <div class="medal-icon">🥇</div>
-                <h3 class="medal-title">Medalla de Honor</h3>
-                <p class="medal-desc">Otorgada por valentía indomable y acciones heroicas arriesgando la vida más allá del deber en combate.</p>
-            </div>
-            <div class="medal-card">
-                <div class="medal-icon">🛡️</div>
-                <h3 class="medal-title">Corazón Púrpura</h3>
-                <p class="medal-desc">Concedida a aquellos soldados que resultaron heridos o cayeron en cumplimiento del deber en operativos oficiales.</p>
-            </div>
-            <div class="medal-card">
-                <div class="medal-icon">🎯</div>
-                <h3 class="medal-title">Tirador Distinguido</h3>
-                <p class="medal-desc">Entregada al personal que demuestre una precisión letal excepcional y habilidades de francotirador avanzadas.</p>
-            </div>
-            <div class="medal-card">
-                <div class="medal-icon">🦅</div>
-                <h3 class="medal-title">Servicio Meritorio</h3>
-                <p class="medal-desc">Por un desempeño sobresaliente en la planificación estratégica y liderazgo intachable en misiones de alto riesgo.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2026 United States Marine Corps - Facción de GTA SAMP. Todos los derechos reservados.</p>
+    <footer class="terminal-footer">
+        <p>SAMP INTEL INTERFACE // ENCRIPTACIÓN TÁCTICA CUÁNTICA MIL-STD-188 &copy; 2026</p>
     </footer>
 
 </body>
