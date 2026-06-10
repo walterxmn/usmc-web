@@ -3,10 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>United States Marine Corps</title>
+    <title>USMC - GTA SAMP Faction</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>United States Marine Corps</h1>
+
+    <div class="overlay-grid"></div>
+
+    <header class="navbar">
+        <div class="logo">USMC <span>FLORIDA</span></div>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#requisitos">Requisitos</a>
+            <a href="#miembros">Cadena de Mando</a>
+            <a href="#medallas">Medallas</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="UNITED STATES MARINE CORPS">UNITED STATES MARINE CORPS</h1>
+            <p class="subtitle">Servicio, Honor y Disciplina en las calles de Florida</p>
+            
+            <div class="logo-container">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTmYVJ5OH1RG9YcayEG3z-DDbl1cYec7nGfPe0Ap8MjqafKZcodE7fq3JioD3wIPb3uKsEVOtsl2oX3vNQ" alt="USMC Logo" class="usmc-logo">
+            </div>
+
+            <a href="https://discord.gg/n3CR6csF" target="_blank" class="btn-discord">
+                <span class="btn-icon">⚡</span> UNIRSE AL DISCORD
+            </a>
+        </div>
+    </section>
+
+    <section id="requisitos" class="info-section">
+        <h2 class="section-title">REQUISITOS DE ALISTAMIENTO</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">🪖</div>
+                <h3>Conceptos de Rol</h3>
+                <p>Conocimiento sólido de canales (IC/OOC), entorno y comandos avanzados de rol (/me, /do).</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔫</div>
+                <h3>Disciplina Táctica</h3>
+                <p>Capacidad para acatar órdenes directas de los altos mandos bajo situaciones de alto estrés en tiroteos o patrullas.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📋</div>
+                <h3>Historial Limpio</h3>
+                <p>No poseer reportes graves en el foro del servidor ni antecedentes penales excesivos dentro del juego.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="miembros" class="roster-section">
+        <h2 class="section-title">CADENA DE MANDO (ROSTER)</h2>
+        <p class="section-subtitle">Haz clic sobre cualquier soldado para abrir su expediente militar detallado</p>
+        
+        <div class="roster-container">
+
+            <input type="checkbox" id="soldado-1" class="modal-toggle">
+            
+            <label for="soldado-1" class="member-card lider">
+                <div class="rank-tag">General</div>
+                <div class="member-avatar">🦅</div>
+                <h3 class="member-name">John_Miller</h3>
+                <p class="member-status status-online">En Línea</p>
+                <span class="view-profile-hint">Ver Expediente 🗂️</span>
+            </label>
+
+            <div class="soldier-modal">
+                <div class="modal-content">
+                    <label for="soldado-1" class="close-modal">✕</label>
+                    <div class="modal-header">
+                        <span class="modal-badge gold">ALTO MANDO</span>
+                        <h2>EXPEDIENTE: JOHN_MILLER</h2>
+                        <p class="modal-rank">Rango Actual: General de División</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="info-grid">
+                            <div class="info-item"><strong>ID de Cuenta:</strong> #10245</div>
+                            <div class="info-item"><strong>Especialidad:</strong> Estrategia y Operaciones Aéreas</div>
+                            <div class="info-item"><strong>Ingreso:</strong> 14/MAR/2024</div>
+                            <div class="info-item"><strong>Sanciones:</strong> Ninguna (Limpio)</div>
+                        </div>
+                        <div class="modal-medals">
+                            <h4>Condecoraciones Asignadas:</h4>
+                            <div class="medal-badges">
+                                <span title="Medalla de Honor">🥇 Medalla de Honor</span>
+                                <span title="Servicio Meritorio">🦅 Servicio Meritorio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <input type="checkbox" id="soldado-2" class="modal-toggle">
+            <label for="soldado-2" class="member-card oficial">
+                <div class="rank-tag">Sargento</div>
+                <div class="member-avatar">🎖️</div>
+                <h3 class="member-name">Marcus_Vance</h3>
+                <p class="member-status status-online">En Línea</p>
+                <span class="view-profile-hint">Ver Expediente 🗂️</span>
+            </label>
+
+            <div class="soldier-modal">
+                <div class="modal-content">
+                    <label for="soldado-2" class="close-modal">✕</label>
+                    <div class="modal-header">
+                        <span class="modal-badge green">OFICIALIA</span>
+                        <h2>EXPEDIENTE: MARCUS_VANCE</h2>
+                        <p class="modal-rank">Rango Actual: Sargento Instructor</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="info-grid">
+                            <div class="info-item"><strong>ID de Cuenta:</strong> #44912</div>
+                            <div class="info-item"><strong>Especialidad:</strong> Entrenamiento e Infantería Ligera</div>
+                            <div class="info-item"><strong>Ingreso:</strong> 02/ENE/2025</div>
+                            <div class="info-item"><strong>Sanciones:</strong> 1 Advertencia verbal</div>
+                        </div>
+                        <div class="modal-medals">
+                            <h4>Condecoraciones Asignadas:</h4>
+                            <div class="medal-badges">
+                                <span title="Tirador Distinguido">🎯 Tirador Distinguido</span>
+                                <span title="Corazón Púrpura">🛡️ Corazón Púrpura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <input type="checkbox" id="soldado-3" class="modal-toggle">
+            <label for="soldado-3" class="member-card recluta">
+                <div class="rank-tag">Sergeant</div>
+                <div class="member-avatar">(imagen)</div>
+                <h3 class="member-name">Walter_Parolini</h3>
+                <p class="member-status status-offline">Fuera de Servicio</p>
+                <span class="view-profile-hint">Ver Expediente 🗂️</span>
+            </label>
+
+            <div class="soldier-modal">
+                <div class="modal-content">
+                    <label for="soldado-3" class="close-modal">✕</label>
+                    <div class="modal-header">
+                        <span class="modal-badge grey">FUERZAS REGULARES</span>
+                        <h2>EXPEDIENTE: WALTER_PAROLINI</h2>
+                        <p class="modal-rank">Rango Actual: Sergeant</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="info-grid">
+                            <div class="info-item"><strong>ID de Cuenta:</strong> #89221</div>
+                            <div class="info-item"><strong>Regimientos:</strong> Reconocimiento de Campo</div>
+                            <div class="info-item"><strong>Ingreso:</strong> 18/FEB/2026</div>
+                            <div class="info-item"><strong>Sanciones:</strong> Ninguna</div>
+                        </div>
+                        <div class="modal-medals">
+                            <h4>Condecoraciones Asignadas:</h4>
+                            <div class="medal-badges">
+                                <span title="Corazón Púrpura">🛡️ Corazón Púrpura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="medallas" class="medals-section">
+        <h2 class="section-title">MEDALLAS Y CONDECORACIONES</h2>
+        <p class="section-subtitle">Galardones otorgados por mérito militar, valentía y antigüedad en servicio</p>
+        
+        <div class="medals-container">
+            <div class="medal-card">
+                <div class="medal-icon">🥇</div>
+                <h3 class="medal-title">Medalla de Honor</h3>
+                <p class="medal-desc">Otorgada por valentía indomable y acciones heroicas arriesgando la vida más allá del deber en combate.</p>
+            </div>
+            <div class="medal-card">
+                <div class="medal-icon">🛡️</div>
+                <h3 class="medal-title">Corazón Púrpura</h3>
+                <p class="medal-desc">Concedida a aquellos soldados que resultaron heridos o cayeron en cumplimiento del deber en operativos oficiales.</p>
+            </div>
+            <div class="medal-card">
+                <div class="medal-icon">🎯</div>
+                <h3 class="medal-title">Tirador Distinguido</h3>
+                <p class="medal-desc">Entregada al personal que demuestre una precisión letal excepcional y habilidades de francotirador avanzadas.</p>
+            </div>
+            <div class="medal-card">
+                <div class="medal-icon">🦅</div>
+                <h3 class="medal-title">Servicio Meritorio</h3>
+                <p class="medal-desc">Por un desempeño sobresaliente en la planificación estratégica y liderazgo intachable en misiones de alto riesgo.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 United States Marine Corps - Facción de GTA SAMP. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
